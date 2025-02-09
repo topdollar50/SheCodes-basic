@@ -1,0 +1,117 @@
+<! DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Crypto Enthusiast</title>
+    <style>
+        body{
+            background: linear-gradient(to top, #dfe9f3 82.5%, white 10%);
+            font-family: Courier new;
+        }
+        h1{
+            text-align: center;
+            color:#ffbf00;
+        }
+        h2{
+            text-align: center;
+            font-weight: 100;
+            color:#f0dc82;
+        }
+        img{
+            display: block;
+            margin:0 auto;
+            max-width: 70%;
+        }
+        .bitcoin{
+            border: 1px solid #fff;
+            border-radius:15px 75px;
+            text-align: center;
+            padding: 15px 75px;
+            background-color:#f4c2c2 ;
+        }
+        .intent{
+            border: 1px solid #fff;
+            border-radius:15px 75px;
+            text-align: center;
+            padding: 15px 75px;
+            background-color:#ace5ee;
+        }
+        .ticker{
+            border: 1px solid #fff;
+            border-radius:15px 75px;
+            text-align: center;
+            padding: 15px 75px;
+            background-color: #66ff00;
+        }
+        .capital{
+            border: 1px solid #fff;
+            border-radius:15px 75px;
+            text-align: center;
+            padding: 15px 75px;
+            background-color:#deb887;
+        }
+        button {
+            display: block;
+            margin: 30px auto;
+            color:white;
+            background-color:#003399;
+            line-height: 40px;
+            border-radius: 10px;
+            padding: 20px 10px 20px 10px;
+            box-shadow: 5px 5px 5px rgb( 136, 231, 136, 0.1)
+            transition: all 200ms ease-in-out;
+        }
+        button:hover{
+            opacity: 0.5;
+            cursor: pointer;
+            background-color: blueviolet;
+            color:#fff;
+        }
+        p{
+            line-height: 150%;
+        }
+        .further{
+            text-decoration:none;
+        }
+        div{
+            line-height: 50%;
+        }
+    </style>
+  </head>
+  <body>
+      <h1>
+       My Crypto Knowledge 💸
+      </h1>
+      <p>I joined the crypto space in 2021 and I'm going to share snippets of what i learnt  about bitcoin with you. it's been both amazing and depressing most of the time 😁</p>
+      <h2>Facts About Bitcoin</h2>
+      <hr />
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/156/966/original/1000001823.png?1739003586" alt="bitcoin" width = "200">
+      <div class="Snippets">
+          <p class= "bitcoin"><strong>Bitcoin</strong> is a popular cryptocurrency that was created in 2008 by an anonymous individual whose nickname is <em>Satoshi Nakamoto</em></p>
+          <br />
+          <p class="intent">The main intent of the Bitcoin creator was to make it possible for people to send and receive payments across countries of the world  without a third-party(banks) and at a very low cost.</p>
+          <br />
+          <p class="ticker"><span style="color:#ff9966 ">BTC</span> is also known as the ticker symbol for Bitcoin </p>
+          <br />
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/156/965/original/1000001822.jpg?1739003472" alt="classes of cryptocurrency">
+         <p class="capital"> Bitcoin is the market capitalization leader meaning that no other cryptocurrency can surpass the market cap of BTC</p>
+         <a href="https://www.bitcoin.com/" target ="_blank" class="further">Further Reading</a>
+      </div>
+      <button>Learn More</button>
+      <script>
+          function learnFurther(){
+              let name = prompt("What is your name?")
+              let numberOfYears = prompt("How many years have you been in crypto?")
+              if (numberOfYears <= 1){
+              alert("Hi "+ name + " " + ",  you're new to crypto ")
+          }else{
+              alert("Hi " + name+ " " + ", you've been in crypto for " + numberOfYears+ " " + "years")
+          }
+          }
+          let learnMore = document.querySelector("button");
+          learnMore.addEventListener("click", learnFurther);
+      </script>
+  </body>
+</html>
